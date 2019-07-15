@@ -111,4 +111,37 @@ $(document).ready(function(){
 			$(element).parents('.control-group').addClass('success');
 		}
 	});
+
+	//Copy Billing Address to Shipping Script
+	$("#copyAddress").click(function(){
+		if(this.checked){
+
+			$("#cust_ship_desc").val($("#cust_desc").val());
+			$("#cust_ship_city").val($("#cust_city").val());
+			$("#cust_ship_country").val($("#cust_country").val());
+			$("#cust_ship_mobile").val($("#cust_mobile").val());
+			$("#cust_ship_email").val($("#cust_email").val());
+			$("#cust_ship_address").val($("#cust_address").val());
+			$("#cust_ship_region").val($("#cust_region").val());
+			$("#cust_ship_fax").val($("#cust_fax").val());
+		} else{
+
+			$("#cust_ship_desc").val('');
+			$("#cust_ship_city").val('');
+			$("#cust_ship_country").val('');
+			$("#cust_ship_mobile").val('');
+			$("#cust_ship_email").val('');
+			$("#cust_ship_address").val('');
+			$("#cust_ship_region").val('');
+			$("#cust_ship_fax").val('');
+		}
+	});
 });
+
+function selectPaymentMethod(){
+	if($('#Cheque').is(':checked') || $('#Bank').is(':checked') ){
+	}else{
+		alert("Please select payment method");
+		return false;
+	}
+}

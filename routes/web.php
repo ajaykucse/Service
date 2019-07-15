@@ -25,5 +25,11 @@ Route::match(['get','post'], '/add-cart','AdminController@addtocart');
 Route::match(['get','post'], '/cart','AdminController@cart');
 Route::get('/cart/delete-product/{id}','AdminController@destroy');
 Route::get('/cart/update-quantity/{id}/{quantity}','AdminController@updateCartQuantity');
+Route::match(['get','post'], '/checkout','AdminController@checkout');
+Route::match(['get','post'], '/order-review','AdminController@orderReview');
+Route::match(['get','post'], '/place-order','AdminController@placeOrder');
+Route::get('/thanks','AdminController@thanks');
+Route::get('/cust-orders','AdminController@custOrders');
+Route::get('/cust-orders/{id}','AdminController@custOrderDetails');
 
 Route::get('/logout','AdminController@logout');

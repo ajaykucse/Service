@@ -3,14 +3,14 @@
 
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="current">Product</a> </div>
-    <h1>Product Items</h1>
+    <div id="breadcrumb"> <a href="{{ url('/admin/dashboard') }}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="{{ url('/admin/dashboard') }}" class="current">Product</a> </div>
+    <h1>PRODUCT iTEMS</h1>
   </div>
   <div class="container-fluid">
     <hr>
      <div class="widget-box">
           <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-            <h5>Product Order</h5>
+            <h5>Product List</h5>
           </div>
           <div class="widget-content nopadding">
             <table class="table table-bordered data-table">

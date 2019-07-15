@@ -43,9 +43,9 @@
                 <a href="/#"><li class="bg_lh"><i class="icon-user"></i> <strong></strong> <small>Total Users</small></li></a>
                 <a href="/#"><li class="bg_lh"><i class="icon-user"></i> <strong></strong> <small>New Users </small></li></a>
                 <a href="{{ url('/admin/product-list') }}"><li class="bg_lh"><i class="icon-globe"></i><strong>{{$product}}</strong> <small>Total Product</small></li></a>
-                <a href="{{ url('/cart') }}"> <li class="bg_lh"><i class="icon-tag"></i> <strong>{{ $totalOrders }}</strong> <small>Total Orders</small></li></a>
+                <a href="{{ url('/cart') }}"> <li class="bg_lh"><i class="icon-shopping-cart"></i> <strong>{{ $totalOrders }}</strong> <small>Cart Items</small></li></a>
                 <li class="bg_lh"><i class="icon-repeat"></i> <strong>10</strong> <small>Pending Orders</small></li>
-                <li class="bg_lh"><i class="icon-globe"></i> <strong>8540</strong> <small>Online Orders</small></li>
+               <a href="{{ url('/cust-orders') }}"> <li class="bg_lh"><i class="icon-shopping-cart"></i> <strong>{{$orders}}</strong> <small>Online Orders</small></li>
               </ul>
             </div>
           </div>
